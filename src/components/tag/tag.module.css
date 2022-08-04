@@ -1,0 +1,58 @@
+.tag {
+  --width: 40px;
+  --height: 18px;
+  --borderRadius: 2px;
+
+  --violet: #eee1fd;
+  --green: #baf8cf;
+  --red: #fed6cc;
+  --orange: #ffdcb6;
+  --blue: #b8e6ff;
+  --light-green: #d8fcb0;
+  --dark-blue: #c6d9ff;
+  --yellow: #fff4c7;
+
+  --backgroundColor: var(--green);
+
+  width: var(--width);
+  height: var(--height);
+  border-radius: var(--borderRadius);
+  background-color: var(--backgroundColor);
+}
+
+.tag_size_auto {
+  --width: 100%;
+  --height: 100%;
+}
+
+.tag_color_violet {
+  --backgroundColor: var(--violet);
+}
+
+.tag_color_green {
+  --backgroundColor: var(--green);
+}
+
+.tag_color_red {
+  --backgroundColor: var(--red);
+}
+
+.tag_color_orange {
+  --backgroundColor: var(--orange);
+}
+
+.tag_color_blue {
+  --backgroundColor: var(--blue);
+}
+
+.tag_color_light-green {
+  --backgroundColor: var(--light-green);
+}
+
+.tag_color_dark-blue {
+  --backgroundColor: var(--dark-blue);
+}
+
+.tag_color_yellow {
+  --backgroundColor: var(--yellow);
+}
