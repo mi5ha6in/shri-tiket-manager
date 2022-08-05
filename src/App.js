@@ -1,4 +1,4 @@
-import { Tag } from "./components/tag/Tag";
+import { Tag } from "./components/Tag/Tag";
 
 function App() {
   return (
