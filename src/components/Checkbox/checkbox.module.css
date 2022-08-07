@@ -56,9 +56,11 @@
   border-color: var(--borderColorChecked);
 }
 
-.checkbox__input:focus-visible + .checkbox__label::before {
+.checkbox__input:focus-visible + .checkbox__label::before,
+.checkbox__input:hover:not(:disabled) + .checkbox__label::before {
   outline: auto;
 }
+
 
 .checkbox__input:disabled + .checkbox__label::before {
   border-color: var(--disabledColor);
