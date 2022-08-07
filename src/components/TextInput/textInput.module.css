@@ -35,7 +35,7 @@
   line-height: var(--lineHeight);
 }
 
-.input_size_auto {
+.input_size_max {
   --width: 100%;
   --height: 100%;
 }

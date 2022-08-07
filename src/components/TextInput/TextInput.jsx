@@ -8,7 +8,7 @@ const defaultIsMultiline = false;
 const defaultFocus = false
 
 export const TextInput = ({
-  labe = defaultLabel,
+  label = defaultLabel,
   id,
   name,
   isMultiline = defaultIsMultiline,
@@ -27,7 +27,7 @@ export const TextInput = ({
     value,
     id,
     name,
-    placeholder: labe,
+    placeholder: label,
     onChange: handelChange,
     className: classnames(style.input, style[`input_size_${size}`]),
     ref,
@@ -51,7 +51,7 @@ export const TextInput = ({
   return (
     <>
       <label htmlFor={id} className="visually-hidden">
-        {labe}
+        {label}
       </label>
       {inputElement}
     </>
