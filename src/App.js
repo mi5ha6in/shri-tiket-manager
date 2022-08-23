@@ -1,11 +1,9 @@
-import { Tag } from "./components/Tag/Tag";
-import { TextInput } from "./components/TextInput/TextInput";
+import { MainPage } from "./pages/MainPage/MainPage";
 
 function App() {
   return (
     <>
-      <Tag color="yellow" />
-      <TextInput name='name' id='1234'  />
+      <MainPage />
     </>
   );
 }
