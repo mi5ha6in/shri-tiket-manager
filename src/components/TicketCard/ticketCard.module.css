@@ -68,6 +68,9 @@
 
 .ticket__indicators {
   display: flex;
-  justify-content: space-between;
   margin-top: auto;
+}
+
+.ticket__icon {
+  margin-left: auto;
 }
