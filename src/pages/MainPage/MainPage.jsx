@@ -14,8 +14,6 @@ export const MainPage = () => {
     "blue",
     "green",
     "red",
-    "blue",
-    "green",
   ];
   return (
     <>

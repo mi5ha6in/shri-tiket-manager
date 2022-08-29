@@ -7,7 +7,7 @@ import {
   IndicatorDescription,
 } from "../../components/Indicator/Indicator";
 import { Button } from "../Button/Button";
-import { IconThreeDots } from "../Icon/Icon";
+import { ReactComponent as IconThreeDots } from "./threeDots.svg";
 
 export const TicketCard = ({ title, tags = [], isComments, isDescription }) => {
   return (
