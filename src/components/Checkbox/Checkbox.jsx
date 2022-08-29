@@ -2,15 +2,19 @@ import { useState } from "react";
 import classnames from "classnames";
 import style from "./checkbox.module.css";
 
-export const Checkbox = ({ label, checked, disabled, id, name }) => {
+export const Checkbox = ({ label, checked = false, disabled, id, name }) => {
   const [isChecked, setIsChecked] = useState(checked);
 
   const handleCheck = () => {
     setIsChecked((isChecked) => !isChecked);
   };
 
+  const classNameCheckbox = label
+    ? ""
+    : classnames(style[`checkbox_without-label`]);
+
   return (
-    <div className={classnames(style.checkbox)}>
+    <div className={classnames(style.checkbox, classNameCheckbox)}>
       <input
         className={classnames("visually-hidden", style["checkbox__input"])}
         checked={isChecked}
