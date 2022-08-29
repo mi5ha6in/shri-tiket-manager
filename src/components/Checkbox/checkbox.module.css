@@ -8,6 +8,7 @@
   --borderColorChecked: rgba(202, 202, 202, 0.5);
   --boxShadowColor: rgba(0, 0, 0, 0.12);
   --disabledColor: #9b9b9b;
+  --padding-left-label: 26px;
   --checkIcon: url("data:image/svg+xml,%3Csvg width='10' height='9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.333 8.192 0 4.858l1.175-1.175 2.158 2.15L8.825.342 10 1.525 3.333 8.192Z' fill='%23292929'/%3E%3C/svg%3E");
 
   display: flex;
@@ -15,12 +16,23 @@
   align-items: center;
 }
 
+.checkbox_without-label {
+  --padding-left-label: 0px;
+  width: 18px;
+  height: 18px;
+}
+
+.checkbox_without-label label {
+  width: 18px;
+  height: 18px;
+}
+
 .checkbox__input {
 }
 
 .checkbox__label {
   position: relative;
-  padding-left: 26px;
+  padding-left: var(--padding-left-label);
 
   font-family: inherit;
   font-style: normal;
@@ -29,6 +41,12 @@
   line-height: var(--lineHeight);
 
   color: var(--textColor);
+}
+
+.checkbox__label_without-label {
+  --padding-left: 0px;
+  width: 20px;
+  height: 20px;
 }
 
 .checkbox__label::before {
@@ -60,7 +78,6 @@
 .checkbox__input:hover:not(:disabled) + .checkbox__label::before {
   outline: auto;
 }
-
 
 .checkbox__input:disabled + .checkbox__label::before {
   border-color: var(--disabledColor);
