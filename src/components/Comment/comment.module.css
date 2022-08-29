@@ -1,0 +1,24 @@
+.comment {
+  max-width: 420px;
+}
+
+.comment__name {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 15px;
+  color: #333333;
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+.comment__text {
+  margin: 0;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+  color: #565656;
+}
