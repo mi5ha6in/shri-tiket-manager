@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/shri-tiket-manager/static/css/main.ff3a7d92.css",
+    "main.js": "/shri-tiket-manager/static/js/main.e9825f2a.js",
+    "static/media/YandexSansText-Medium.woff2": "/shri-tiket-manager/static/media/YandexSansText-Medium.43fa0def7951e857f96c.woff2",
+    "static/media/YandexSansText-Regular.woff2": "/shri-tiket-manager/static/media/YandexSansText-Regular.fd627cc781ea46efb18f.woff2",
+    "index.html": "/shri-tiket-manager/index.html",
+    "static/media/threeDots.svg": "/shri-tiket-manager/static/media/threeDots.1c368343bfdc2a70303cf03deb278dbf.svg",
+    "main.ff3a7d92.css.map": "/shri-tiket-manager/static/css/main.ff3a7d92.css.map",
+    "main.e9825f2a.js.map": "/shri-tiket-manager/static/js/main.e9825f2a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ff3a7d92.css",
+    "static/js/main.e9825f2a.js"
+  ]
+}
