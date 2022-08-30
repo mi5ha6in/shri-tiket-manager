@@ -1,0 +1,8 @@
+.page {
+  width: 900px;
+  margin: 36px auto;
+}
+
+.page__filter {
+  margin-bottom: 80px;
+}
