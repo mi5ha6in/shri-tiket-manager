@@ -1,5 +1,6 @@
 {
   "name": "ticket_manager",
+  "homepage": "https://mi5ha6in.github.io/shri-tiket-manager/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -16,7 +17,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -37,6 +40,7 @@
     ]
   },
   "devDependencies": {
-    "classnames": "^2.3.1"
+    "classnames": "^2.3.1",
+    "gh-pages": "^4.0.0"
   }
 }

@@ -1,3 +1,5 @@
+[Собранная версия](https://mi5ha6in.github.io/shri-tiket-manager/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
