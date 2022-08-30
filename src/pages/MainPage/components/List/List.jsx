@@ -6,10 +6,10 @@ import { STATUS_MAP } from "../../../../data/const";
 
 const checkPropExists = (prop) => (prop?.length > 0 ? true : false);
 
-export const List = ({ tasks, status }) => {
+export const List = ({ tasks, status, className }) => {
   const isButton = status !== STATUS_MAP.DONE;
   return (
-    <div className={classnames(style[`list`])}>
+    <div className={classnames(style[`list`], className)}>
       <h2 className={classnames(style[`list__status`])}>{status}</h2>
       <div className={classnames(style[`list__content`])}>
         {tasks.map(({ id, title, tags, description, comments, status }) => {
