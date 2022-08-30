@@ -3,7 +3,8 @@ import { List } from "./components/List/List";
 import { data } from "../../data/data";
 import { STATUS_MAP } from "../../data/const";
 
-const filterTasksByStatus = (tasks, status) => tasks.filter(task => task.status === status);
+const filterTasksByStatus = (tasks, status) =>
+  tasks.filter((task) => task.status === status);
 
 const tasksTodo = filterTasksByStatus(data, STATUS_MAP.TODO);
 const tasksInProgress = filterTasksByStatus(data, STATUS_MAP.IN_PROGRESS);

@@ -1,9 +1,9 @@
 import { TAG_MAP, STATUS_MAP } from "./const";
 import { nanoid } from "nanoid";
 
-
-const {VIOLET, GREEN, RED, ORANGE, BLUE, LIGHT_GREEN, DARK_BLUE, YELLOW} = TAG_MAP;
-const {TODO, IN_PROGRESS, DONE} = STATUS_MAP;
+const { VIOLET, GREEN, RED, ORANGE, BLUE, LIGHT_GREEN, DARK_BLUE, YELLOW } =
+  TAG_MAP;
+const { TODO, IN_PROGRESS, DONE } = STATUS_MAP;
 
 export const data = [
   {
@@ -11,7 +11,7 @@ export const data = [
     status: TODO,
     title: "Нарисовать иллюстрации",
     description: "Полное описание",
-    tags: [VIOLET, GREEN, RED, ORANGE, BLUE, LIGHT_GREEN, DARK_BLUE, YELLOW,],
+    tags: [VIOLET, GREEN, RED, ORANGE, BLUE, LIGHT_GREEN, DARK_BLUE, YELLOW],
     comments: [
       {
         id: nanoid(),
@@ -30,7 +30,7 @@ export const data = [
     status: TODO,
     title: "Сверстать лендинг по готовому шаблону",
     description: "Полное описание",
-    tags: [VIOLET, GREEN, RED, ORANGE,],
+    tags: [VIOLET, GREEN, RED, ORANGE],
     comments: [
       {
         id: nanoid(),
@@ -44,14 +44,14 @@ export const data = [
     status: TODO,
     description: "Полное описание",
     title: "Нарисовать иллюстрации",
-    tags: [BLUE, LIGHT_GREEN, DARK_BLUE, YELLOW,],
+    tags: [BLUE, LIGHT_GREEN, DARK_BLUE, YELLOW],
   },
   {
     id: nanoid(),
     status: TODO,
     description: "Полное описание",
     title: "Прочитать статью про архитектуру frontend приложений",
-    tags: [BLUE, LIGHT_GREEN, DARK_BLUE,],
+    tags: [BLUE, LIGHT_GREEN, DARK_BLUE],
     comments: [
       {
         id: nanoid(),
@@ -65,7 +65,7 @@ export const data = [
     status: IN_PROGRESS,
     title: "Нарисовать иллюстрации",
     description: "Полное описание",
-    tags: [VIOLET, GREEN, RED, ORANGE, BLUE, LIGHT_GREEN, DARK_BLUE, YELLOW,],
+    tags: [VIOLET, GREEN, RED, ORANGE, BLUE, LIGHT_GREEN, DARK_BLUE, YELLOW],
     comments: [
       {
         id: nanoid(),
@@ -84,7 +84,7 @@ export const data = [
     status: IN_PROGRESS,
     title: "Сверстать лендинг по готовому шаблону",
     description: "Полное описание",
-    tags: [VIOLET, GREEN, RED,],
+    tags: [VIOLET, GREEN, RED],
     comments: [
       {
         id: nanoid(),
@@ -105,7 +105,7 @@ export const data = [
     status: DONE,
     title: "Сверстать лендинг по готовому шаблону",
     description: "Полное описание",
-    tags: [VIOLET, GREEN, RED, ORANGE,],
+    tags: [VIOLET, GREEN, RED, ORANGE],
     comments: [
       {
         id: nanoid(),
@@ -119,7 +119,7 @@ export const data = [
     status: DONE,
     title: "Нарисовать иллюстрации",
     description: "Полное описание",
-    tags: [VIOLET, GREEN, RED, ORANGE, BLUE, LIGHT_GREEN, DARK_BLUE, YELLOW,],
+    tags: [VIOLET, GREEN, RED, ORANGE, BLUE, LIGHT_GREEN, DARK_BLUE, YELLOW],
     comments: [
       {
         id: nanoid(),
@@ -152,7 +152,7 @@ export const data = [
     status: DONE,
     title: "Нарисовать иллюстрации",
     description: "Полное описание",
-    tags: [VIOLET, GREEN, RED, ORANGE, BLUE, LIGHT_GREEN, DARK_BLUE, YELLOW,],
+    tags: [VIOLET, GREEN, RED, ORANGE, BLUE, LIGHT_GREEN, DARK_BLUE, YELLOW],
     comments: [
       {
         id: nanoid(),
@@ -171,7 +171,7 @@ export const data = [
     status: DONE,
     title: "Нарисовать иллюстрации",
     description: "Полное описание",
-    tags: [VIOLET, GREEN, RED, ORANGE, BLUE, LIGHT_GREEN, DARK_BLUE, YELLOW,],
+    tags: [VIOLET, GREEN, RED, ORANGE, BLUE, LIGHT_GREEN, DARK_BLUE, YELLOW],
     comments: [
       {
         id: nanoid(),
