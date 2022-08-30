@@ -28,8 +28,8 @@ export const TicketCard = ({ title, tags = [], isComments, isDescription }) => {
           <IconThreeDots />
         </Button>
         <div className={classnames(style[`ticket__indicators`])}>
-          {isComments && <IndicatorComment />}
-          {isDescription && <IndicatorDescription />}
+          {isComments && <IndicatorComment className={classnames(style[`ticket__icon`])} />}
+          {isDescription && <IndicatorDescription className={classnames(style[`ticket__icon`])} />}
         </div>
       </div>
     </div>
