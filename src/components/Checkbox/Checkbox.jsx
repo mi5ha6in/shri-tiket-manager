@@ -1,13 +1,14 @@
 import { useState } from "react";
 import classnames from "classnames";
 import style from "./checkbox.module.css";
+import { useCallback } from "react";
 
 export const Checkbox = ({ label, checked = false, disabled, id, name }) => {
   const [isChecked, setIsChecked] = useState(checked);
 
-  const handleCheck = () => {
+  const handleCheck = useCallback(() => {
     setIsChecked((isChecked) => !isChecked);
-  };
+  }, []);
 
   const classNameCheckbox = label
     ? ""
