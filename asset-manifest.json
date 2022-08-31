@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/shri-tiket-manager/static/css/main.0db98dd7.css",
-    "main.js": "/shri-tiket-manager/static/js/main.faeb4960.js",
+    "main.css": "/shri-tiket-manager/static/css/main.0bf12add.css",
+    "main.js": "/shri-tiket-manager/static/js/main.31106f85.js",
     "static/media/YandexSansText-Medium.woff2": "/shri-tiket-manager/static/media/YandexSansText-Medium.43fa0def7951e857f96c.woff2",
     "static/media/YandexSansText-Regular.woff2": "/shri-tiket-manager/static/media/YandexSansText-Regular.fd627cc781ea46efb18f.woff2",
     "index.html": "/shri-tiket-manager/index.html",
     "static/media/arrowIcon.svg": "/shri-tiket-manager/static/media/arrowIcon.8c7243ceceb8574e5a56cfb6c3ecef09.svg",
     "static/media/threeDots.svg": "/shri-tiket-manager/static/media/threeDots.1c368343bfdc2a70303cf03deb278dbf.svg",
     "static/media/closeIcon.svg": "/shri-tiket-manager/static/media/closeIcon.2bb605c6d659436e48c69d32bc3ffa1e.svg",
-    "main.0db98dd7.css.map": "/shri-tiket-manager/static/css/main.0db98dd7.css.map",
-    "main.faeb4960.js.map": "/shri-tiket-manager/static/js/main.faeb4960.js.map"
+    "main.0bf12add.css.map": "/shri-tiket-manager/static/css/main.0bf12add.css.map",
+    "main.31106f85.js.map": "/shri-tiket-manager/static/js/main.31106f85.js.map"
   },
   "entrypoints": [
-    "static/css/main.0db98dd7.css",
-    "static/js/main.faeb4960.js"
+    "static/css/main.0bf12add.css",
+    "static/js/main.31106f85.js"
   ]
 }
