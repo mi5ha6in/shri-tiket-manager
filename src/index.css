@@ -39,6 +39,11 @@ code {
     monospace;
 }
 
+#modal {
+  position: relative;
+  z-index: 100;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
