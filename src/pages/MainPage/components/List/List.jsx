@@ -3,22 +3,15 @@ import classnames from "classnames";
 import { TicketCard } from "../../../../components/TicketCard/TicketCard";
 import { Button } from "../../../../components/Button/Button";
 import { STATUS_MAP } from "../../../../data/const";
-import { useState, useCallback } from "react";
+import { useModal } from "../../../../hooks/useModal";
 import { ModalTicketEditor } from "../ModalTicketEditor/ModalTicketEditor";
 
 const checkPropExists = (prop) => (prop?.length > 0 ? true : false);
 
 export const List = ({ tasks, status, className }) => {
   const isButton = status !== STATUS_MAP.DONE;
-  const [showModal, setShowModal] = useState(false);
 
-  const onClickAddButton = useCallback(() => {
-    setShowModal((showModal) => (showModal = true));
-  }, []);
-
-  const onClickCloseButton = useCallback(() => {
-    setShowModal((showModal) => (showModal = false));
-  }, []);
+  const [showModal, onClickAddButton, onClickCloseButton] = useModal();
 
   return (
     <div className={classnames(style[`list`], className)}>

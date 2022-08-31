@@ -8,19 +8,12 @@ import {
 } from "../../components/Indicator/Indicator";
 import { Button } from "../Button/Button";
 import { ReactComponent as IconThreeDots } from "./threeDots.svg";
-import { useState, useCallback } from "react";
 import { ModalTicketEditor } from "../../pages/MainPage/components/ModalTicketEditor/ModalTicketEditor";
+import { useModal } from "../../hooks/useModal";
 
 export const TicketCard = ({ title, tags = [], isComments, isDescription }) => {
-  const [showModal, setShowModal] = useState(false);
 
-  const onClickTicket = useCallback( () => {
-    setShowModal((showModal) => (showModal = true));
-  }, []);
-
-  const onClickCloseButton = useCallback(() => {
-    setShowModal((showModal) => (showModal = false));
-  }, []);
+  const [showModal, onClickTicket, onClickCloseButton] = useModal();
 
   return (
     <>
