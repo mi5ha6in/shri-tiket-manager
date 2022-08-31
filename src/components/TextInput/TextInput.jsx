@@ -5,7 +5,7 @@ import style from "./textInput.module.css";
 
 const defaultLabel = "Type text";
 const defaultIsMultiline = false;
-const defaultFocus = false
+const defaultFocus = false;
 
 export const TextInput = ({
   label = defaultLabel,
@@ -14,6 +14,7 @@ export const TextInput = ({
   isMultiline = defaultIsMultiline,
   size,
   isFocus = defaultFocus,
+  className,
 }) => {
   const [value, setValue] = useState("");
 
@@ -29,18 +30,15 @@ export const TextInput = ({
     name,
     placeholder: label,
     onChange: handelChange,
-    className: classnames(style.input, style[`input_size_${size}`]),
+    className: classnames(style.input, style[`input_size_${size}`], className),
     ref,
   };
 
-  useEffect(
-    () => {
-      if (isFocus) {
-        ref.current.focus()
-      }
-    },
-    [isFocus]
-  )
+  useEffect(() => {
+    if (isFocus) {
+      ref.current.focus();
+    }
+  }, [isFocus]);
 
   const inputElement = isMultiline ? (
     <textarea {...inputProps} />
