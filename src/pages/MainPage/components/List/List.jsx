@@ -4,7 +4,7 @@ import { TicketCard } from "../../../../components/TicketCard/TicketCard";
 import { Button } from "../../../../components/Button/Button";
 import { STATUS_MAP } from "../../../../data/const";
 import { Modal } from "../../../../components/Modal/Modal";
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import { TicketEditor } from "../../../../components/TicketEditor/TicketEditor";
 
 const checkPropExists = (prop) => (prop?.length > 0 ? true : false);
@@ -13,13 +13,13 @@ export const List = ({ tasks, status, className }) => {
   const isButton = status !== STATUS_MAP.DONE;
   const [showModal, setShowModal] = useState(false);
 
-  const onClickAddButton = () => {
+  const onClickAddButton = useCallback( () => {
     setShowModal((showModal) => (showModal = true));
-  };
+  }, []);
 
-  const onClickCloseButton = () => {
+  const onClickCloseButton = useCallback(() => {
     setShowModal((showModal) => (showModal = false));
-  };
+  }, []);
 
   const modalElement = showModal ? (
     <Modal onCloseClick={onClickCloseButton}>
