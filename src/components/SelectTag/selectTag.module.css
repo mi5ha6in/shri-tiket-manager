@@ -1,5 +1,6 @@
 .select {
   width: 168px;
+  position: relative;
 }
 
 .select__title {
@@ -30,6 +31,8 @@
 }
 
 .select__options {
+  width: 168px;
+  position: absolute;
   row-gap: 10px;
   padding: 10px;
   background-color: #d8d7d7;
@@ -47,6 +50,7 @@
   display: grid;
   max-height: 146px;
   opacity: 1;
+  z-index: 1;
   overflow-y: auto;
   transition: all 0.3s ease;
 }
