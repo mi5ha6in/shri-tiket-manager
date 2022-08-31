@@ -9,8 +9,7 @@ import {
 import { Button } from "../Button/Button";
 import { ReactComponent as IconThreeDots } from "./threeDots.svg";
 import { useState, useCallback } from "react";
-import { Modal } from "../Modal/Modal";
-import { TicketEditor } from "../TicketEditor/TicketEditor";
+import { ModalTicketEditor } from "../../pages/MainPage/components/ModalTicketEditor/ModalTicketEditor";
 
 export const TicketCard = ({ title, tags = [], isComments, isDescription }) => {
   const [showModal, setShowModal] = useState(false);
@@ -22,12 +21,6 @@ export const TicketCard = ({ title, tags = [], isComments, isDescription }) => {
   const onClickCloseButton = useCallback(() => {
     setShowModal((showModal) => (showModal = false));
   }, []);
-
-  const modalElement = showModal ? (
-    <Modal onCloseClick={onClickCloseButton}>
-      <TicketEditor title="Редактировать тикет" />
-    </Modal>
-  ) : null;
 
   return (
     <>
@@ -59,7 +52,11 @@ export const TicketCard = ({ title, tags = [], isComments, isDescription }) => {
           </div>
         </div>
       </div>
-      {modalElement}
+      <ModalTicketEditor
+        title="Редактировать тикет"
+        showModal={showModal}
+        onClickCloseButton={onClickCloseButton}
+      />
     </>
   );
 };

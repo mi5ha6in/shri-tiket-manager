@@ -3,9 +3,8 @@ import classnames from "classnames";
 import { TicketCard } from "../../../../components/TicketCard/TicketCard";
 import { Button } from "../../../../components/Button/Button";
 import { STATUS_MAP } from "../../../../data/const";
-import { Modal } from "../../../../components/Modal/Modal";
 import { useState, useCallback } from "react";
-import { TicketEditor } from "../../../../components/TicketEditor/TicketEditor";
+import { ModalTicketEditor } from "../ModalTicketEditor/ModalTicketEditor";
 
 const checkPropExists = (prop) => (prop?.length > 0 ? true : false);
 
@@ -13,19 +12,13 @@ export const List = ({ tasks, status, className }) => {
   const isButton = status !== STATUS_MAP.DONE;
   const [showModal, setShowModal] = useState(false);
 
-  const onClickAddButton = useCallback( () => {
+  const onClickAddButton = useCallback(() => {
     setShowModal((showModal) => (showModal = true));
   }, []);
 
   const onClickCloseButton = useCallback(() => {
     setShowModal((showModal) => (showModal = false));
   }, []);
-
-  const modalElement = showModal ? (
-    <Modal onCloseClick={onClickCloseButton}>
-      <TicketEditor title="Создать тикет" />
-    </Modal>
-  ) : null;
 
   return (
     <div className={classnames(style[`list`], className)}>
@@ -56,7 +49,11 @@ export const List = ({ tasks, status, className }) => {
           </Button>
         )}
       </div>
-      {modalElement}
+      <ModalTicketEditor
+        title="Создать тикет"
+        showModal={showModal}
+        onClickCloseButton={onClickCloseButton}
+      />
     </div>
   );
 };
