@@ -2,14 +2,10 @@ import { Tag } from "../Tag/Tag";
 import style from "./ticketCard.module.css";
 import classnames from "classnames";
 import { nanoid } from "nanoid";
-import {
-  IndicatorComment,
-  IndicatorDescription,
-} from "../../components/Indicator/Indicator";
-import { Button } from "../Button/Button";
-import { ReactComponent as IconThreeDots } from "./threeDots.svg";
+import {Indicators} from "../Indicators/Indicators";
 import { ModalTicketEditor } from "../../pages/MainPage/components/ModalTicketEditor/ModalTicketEditor";
 import { useModal } from "../../hooks/useModal";
+import { GoToEditButton } from "../GoToEditButton/GoToEditButton";
 
 export const TicketCard = ({ title, tags = [], isComments, isDescription }) => {
 
@@ -27,21 +23,9 @@ export const TicketCard = ({ title, tags = [], isComments, isDescription }) => {
           </div>
         </div>
         <div className={classnames(style[`ticket__panel`])}>
-          <Button
-            iconText="Перейти на страницу редактирования"
-            className={classnames(style[`ticket__button-dots`])}
-          >
-            <IconThreeDots />
-          </Button>
+          <GoToEditButton className={classnames(style[`ticket__button-dots`])} />
           <div className={classnames(style[`ticket__indicators`])}>
-            {isComments && (
-              <IndicatorComment className={classnames(style[`ticket__icon`])} />
-            )}
-            {isDescription && (
-              <IndicatorDescription
-                className={classnames(style[`ticket__icon`])}
-              />
-            )}
+            <Indicators className={classnames(style[`ticket__icon`])} isComments={isComments} isDescription={isDescription} />
           </div>
         </div>
       </div>
